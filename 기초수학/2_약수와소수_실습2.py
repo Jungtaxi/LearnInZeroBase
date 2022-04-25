@@ -4,7 +4,7 @@ def is_decimal(num):
         return False
     if num == 2:
         return True
-    for i in range(2,num//2+2):
+    for i in range(2,int(num**(1/2))):
         if num%i==0:
             return False
     return True
