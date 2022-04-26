@@ -2,9 +2,7 @@
 def is_decimal(num):
     if num <= 1:
         return False
-    if num == 2:
-        return True
-    for i in range(2,int(num**(1/2))):
+    for i in range(2,int(num**(1/2))+1):
         if num%i==0:
             return False
     return True
