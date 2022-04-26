@@ -6,6 +6,6 @@ def is_decimal(num):
             return False
     return True
 
-for i in range(31):
+for i in range(154):
     if is_decimal(i):
         print(i, end=' ')
