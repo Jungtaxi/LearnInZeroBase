@@ -7,3 +7,5 @@ sum = a1*(1-r**n)//(1-r)
 for i in range(1,n+1):
     print('{}번째 항은 : {}'.format(i,a1*(r**(i-1))))
 print('등비 합은 : {}'.format(sum))
+
+
