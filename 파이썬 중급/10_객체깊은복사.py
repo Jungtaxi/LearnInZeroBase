@@ -13,17 +13,14 @@ class NewGenerationPc :
         print(f'self.cpu : {self.cpu}')
         print(f'self.memory : {self.memory}')
         print(f'self.ssd : {self.ssd}')
+        print()
 
-myPc = NewGenerationPc('jupiter','i5','8g','259g')
-myPc.printPcInfo()
-print()
+pc1 = NewGenerationPc('jupiter','i5','8g','259g')
+pc2 = NewGenerationPc('Henna','i7','16g','512g')
 
-friendPc = NewGenerationPc('Henna','i7','16g','512g')
-friendPc.printPcInfo()
-print()
-
-#내 피씨 업그레이드 하자
-myPc.memory = '16g'
-myPc.cpu = 'i9'
-myPc.ssd = '1T'
-myPc.printPcInfo()
+import copy
+pc3 = copy.copy(pc1)
+pc1.name = 'pc1'
+pc3.name = 'pc3'
+pc1.printPcInfo()
+pc3.printPcInfo()
